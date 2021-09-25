@@ -1,36 +1,328 @@
-# This is a basic workflow to help you get started with Actions
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Discord";
+		Text = "discord.gg/sXHYKYsC, copied to clipboard";
+		Duration = 5;
+	})
+	setclipboard('discord.gg/sXHYKYsC')
 
-name: CI
+	-- Instances:
 
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local OpenFrame = Instance.new("Frame")
+	local DESTINYHUB = Instance.new("TextButton")
+	local SWAGMODE = Instance.new("TextButton")
+	local DaHood = Instance.new("TextButton")
+	local MM2 = Instance.new("TextButton")
+	local PSX2 = Instance.new("TextButton")
+	local script2 = Instance.new("TextButton")
+	local script2_2 = Instance.new("TextButton")
+	local script3 = Instance.new("TextButton")
+	local script4 = Instance.new("TextButton")
+	local script5 = Instance.new("TextButton")
+	local TextLabel1 = Instance.new("TextLabel")
+	local script6 = Instance.new("TextButton")
+	local TextLabel2 = Instance.new("TextLabel")
+	local OpenFrame2 = Instance.new("Frame")
+	local Masterscript = Instance.new("TextButton")
+	local Vyn = Instance.new("TextButton")
+	local OpenFrame3 = Instance.new("Frame")
+	local PSX = Instance.new("TextButton")
+	local PFN = Instance.new("TextButton")
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+	--Properties:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+	ScreenGui.Parent = game.CoreGui
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+	Frame.Position = UDim2.new(0.154808432, 0, 0.213496953, 0)
+	Frame.Size = UDim2.new(0, 404, 0, 239)
+	Frame.Active = true
+	Frame.Draggable = true
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+	OpenFrame.Name = "OpenFrame"
+	OpenFrame.Parent = Frame
+	OpenFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+	OpenFrame.Position = UDim2.new(0.249155179, 0, 0.163445786, 0)
+	OpenFrame.Size = UDim2.new(0, 303, 0, 178)
+	OpenFrame.Visible = false
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+	DESTINYHUB.Name = "DESTINYHUB"
+	DESTINYHUB.Parent = OpenFrame
+	DESTINYHUB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	DESTINYHUB.Position = UDim2.new(0.000320182764, 0, 0.550773382, 0)
+	DESTINYHUB.Size = UDim2.new(0, 303, 0, 39)
+	DESTINYHUB.Font = Enum.Font.SourceSans
+	DESTINYHUB.Text = "Destiny hub"
+	DESTINYHUB.TextColor3 = Color3.fromRGB(85, 0, 0)
+	DESTINYHUB.TextSize = 14.000
+	DESTINYHUB.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+	end)
+	DESTINYHUB.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+	SWAGMODE.Name = "SWAGMODE"
+	SWAGMODE.Parent = OpenFrame
+	SWAGMODE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	SWAGMODE.Position = UDim2.new(0.000320182764, 0, 0.773320556, 0)
+	SWAGMODE.Size = UDim2.new(0, 303, 0, 40)
+	SWAGMODE.Font = Enum.Font.SourceSans
+	SWAGMODE.Text = "SwagMode"
+	SWAGMODE.TextColor3 = Color3.fromRGB(85, 0, 0)
+	SWAGMODE.TextSize = 14.000
+	SWAGMODE.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+	end)
+	SWAGMODE.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+	DaHood.Name = "DaHood"
+	DaHood.Parent = Frame
+	DaHood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	DaHood.Position = UDim2.new(-0.000604689121, 0, 0.163445815, 0)
+	DaHood.Size = UDim2.new(0, 101, 0, 20)
+	DaHood.Font = Enum.Font.SourceSans
+	DaHood.Text = "Da hood"
+	DaHood.TextColor3 = Color3.fromRGB(115, 0, 0)
+	DaHood.TextSize = 14.000
+
+	MM2.Name = "MM2"
+	MM2.Parent = Frame
+	MM2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	MM2.Position = UDim2.new(-0.000604673522, 0, 0.246319026, 0)
+	MM2.Size = UDim2.new(0, 101, 0, 20)
+	MM2.Font = Enum.Font.SourceSans
+	MM2.Text = "MM2"
+	MM2.TextColor3 = Color3.fromRGB(121, 0, 0)
+	MM2.TextSize = 14.000
+
+	PSX2.Name = "PSX2"
+	PSX2.Parent = Frame
+	PSX2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	PSX2.Position = UDim2.new(-0.000604689121, 0, 0.329192221, 0)
+	PSX2.Size = UDim2.new(0, 101, 0, 20)
+	PSX2.Font = Enum.Font.SourceSans
+	PSX2.Text = "PSX scripts"
+	PSX2.TextColor3 = Color3.fromRGB(121, 0, 0)
+	PSX2.TextSize = 14.000
+
+	script2.Name = "script2"
+	script2.Parent = Frame
+	script2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script2.Position = UDim2.new(-0.000604689121, 0, 0.407898784, 0)
+	script2.Size = UDim2.new(0, 101, 0, 20)
+	script2.Font = Enum.Font.SourceSans
+	script2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script2.TextSize = 14.000
+
+	script2_2.Name = "script 2"
+	script2_2.Parent = Frame
+	script2_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script2_2.Position = UDim2.new(-0.000604689121, 0, 0.490772009, 0)
+	script2_2.Size = UDim2.new(0, 101, 0, 20)
+	script2_2.Font = Enum.Font.SourceSans
+	script2_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script2_2.TextSize = 14.000
+
+	script3.Name = "script 3"
+	script3.Parent = Frame
+	script3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script3.Position = UDim2.new(-0.000604689121, 0, 0.573645175, 0)
+	script3.Size = UDim2.new(0, 101, 0, 20)
+	script3.Font = Enum.Font.SourceSans
+	script3.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script3.TextSize = 14.000
+
+	script4.Name = "script 4"
+	script4.Parent = Frame
+	script4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script4.Position = UDim2.new(-0.000604688423, 0, 0.656518459, 0)
+	script4.Size = UDim2.new(0, 101, 0, 20)
+	script4.Font = Enum.Font.SourceSans
+	script4.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script4.TextSize = 14.000
+
+	script5.Name = "script5"
+	script5.Parent = Frame
+	script5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script5.Position = UDim2.new(-0.000604689121, 0, 0.739391625, 0)
+	script5.Size = UDim2.new(0, 101, 0, 20)
+	script5.Font = Enum.Font.SourceSans
+	script5.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script5.TextSize = 14.000
+
+	TextLabel1.Name = "TextLabel1"
+	TextLabel1.Parent = Frame
+	TextLabel1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel1.Position = UDim2.new(-0.00307995081, 0, -0.00230059028, 0)
+	TextLabel1.Size = UDim2.new(0, 405, 0, 40)
+	TextLabel1.Font = Enum.Font.SpecialElite
+	TextLabel1.Text = "V8sky#0001 GUI"
+	TextLabel1.TextColor3 = Color3.fromRGB(116, 0, 0)
+	TextLabel1.TextSize = 40.000
+
+	script6.Name = "script6"
+	script6.Parent = Frame
+	script6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	script6.Position = UDim2.new(0, 0, 0.820083678, 0)
+	script6.Size = UDim2.new(0, 100, 0, 21)
+	script6.Font = Enum.Font.SourceSans
+	script6.TextColor3 = Color3.fromRGB(0, 0, 0)
+	script6.TextSize = 14.000
+
+	TextLabel2.Name = "TextLabel2"
+	TextLabel2.Parent = Frame
+	TextLabel2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+	TextLabel2.Position = UDim2.new(0, 0, 0.907949805, 0)
+	TextLabel2.Size = UDim2.new(0, 403, 0, 22)
+	TextLabel2.Font = Enum.Font.SciFi
+	TextLabel2.Text = "Please Join The Discord server"
+	TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel2.TextSize = 25.000
+
+	OpenFrame2.Name = "OpenFrame2"
+	OpenFrame2.Parent = Frame
+	OpenFrame2.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+	OpenFrame2.Position = UDim2.new(0.249155179, 0, 0.163445786, 0)
+	OpenFrame2.Size = UDim2.new(0, 303, 0, 178)
+	OpenFrame2.Visible = false
+
+	Masterscript.Name = "Masterscript"
+	Masterscript.Parent = OpenFrame2
+	Masterscript.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Masterscript.Position = UDim2.new(0.000320182764, 0, 0.773320556, 0)
+	Masterscript.Size = UDim2.new(0, 303, 0, 40)
+	Masterscript.Font = Enum.Font.SourceSans
+	Masterscript.Text = "Master Script"
+	Masterscript.TextColor3 = Color3.fromRGB(86, 0, 0)
+	Masterscript.TextSize = 14.000
+	Masterscript.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+	end)
+	Masterscript.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+	Vyn.Name = "Vyn"
+	Vyn.Parent = OpenFrame2
+	Vyn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Vyn.Position = UDim2.new(0.000320182764, 0, 0.550773382, 0)
+	Vyn.Size = UDim2.new(0, 303, 0, 38)
+	Vyn.Font = Enum.Font.SourceSans
+	Vyn.Text = "Vyn"
+	Vyn.TextColor3 = Color3.fromRGB(94, 0, 0)
+	Vyn.TextSize = 14.000
+	Vyn.MouseButton1Down:connect(function()
+		loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	end)
+	Vyn.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+	OpenFrame3.Name = "OpenFrame3"
+	OpenFrame3.Parent = Frame
+	OpenFrame3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+	OpenFrame3.Position = UDim2.new(0.247524753, 0, 0.163179919, 0)
+	OpenFrame3.Size = UDim2.new(0, 303, 0, 178)
+  OpenFrame3.Visible = false
+
+	PSX.Name = "PSX"
+	PSX.Parent = OpenFrame3
+	PSX.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	PSX.Position = UDim2.new(0.00660066027, 0, 0.551130295, 0)
+	PSX.Size = UDim2.new(0, 301, 0, 39)
+	PSX.Font = Enum.Font.SourceSans
+	PSX.Text = "PSX"
+	PSX.TextColor3 = Color3.fromRGB(85, 0, 0)
+	PSX.TextSize = 14.000
+	PSX.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
+	end)
+	PSX.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+	PFN.Name = "PFN"
+	PFN.Parent = OpenFrame3
+	PFN.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	PFN.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	PFN.Position = UDim2.new(0.00660066027, 0, 0.773677528, 0)
+	PFN.Size = UDim2.new(0, 301, 0, 39)
+	PFN.Font = Enum.Font.SourceSans
+	PFN.Text = "PFN"
+	PFN.TextColor3 = Color3.fromRGB(85, 0, 0)
+	PFN.TextSize = 14.000
+	PFN.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/BY-PFN/Pet-Simulator-X-/main/Pet%20Simulator%20X%20ByPFN%20.lua", true))()
+	end)
+	PFN.MouseButton1Down:connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "choco has request";
+			Text = "this is all setup by V8sky#0001 please join the server on your clipboard, copied to clipboard";
+			Duration = 5;
+		})
+	end)
+
+
+	-- Scripts:
+
+	local function WGIFEQ_fake_script() -- DaHood.LocalScript 
+		local script = Instance.new('LocalScript', DaHood)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if script.Parent.Parent.OpenFrame.Visible == true then
+				script.Parent.Parent.OpenFrame.Visible = false
+			else
+				script.Parent.Parent.OpenFrame.Visible = true
+			end
+		end)
+	end
+	coroutine.wrap(WGIFEQ_fake_script)()
+	local function LRFJRQV_fake_script() -- MM2.LocalScript 
+		local script = Instance.new('LocalScript', MM2)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if script.Parent.Parent.OpenFrame2.Visible == true then
+				script.Parent.Parent.OpenFrame2.Visible = false
+			else
+				script.Parent.Parent.OpenFrame2.Visible = true
+			end
+		end)
+	end
+	coroutine.wrap(LRFJRQV_fake_script)()
+	local function CVLXUH_fake_script() -- PSX2.LocalScript 
+		local script = Instance.new('LocalScript', PSX2)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			if script.Parent.Parent.OpenFrame3.Visible == true then
+				script.Parent.Parent.OpenFrame3.Visible = false
+			else
+				script.Parent.Parent.OpenFrame3.Visible = true
+			end
+		end)
+	end
+	coroutine.wrap(CVLXUH_fake_script)()
